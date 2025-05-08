@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloomberg-Style Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">MKTR</div>
+    <nav>
+      <a href="#">Markets</a>
+      <a href="#">News</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Analytics</a>
+    </nav>
+  </header>
+
+  <div class="ticker" id="ticker">
+    <!-- JS will populate -->
+  </div>
+
+  <main>
+    <section class="panel">
+      <h2>Market Overview</h2>
+      <div class="grid">
+        <div class="card">S&P 500: <span id="spx"></span></div>
+        <div class="card">NASDAQ: <span id="nasdaq"></span></div>
+        <div class="card">DOW: <span id="dow"></span></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>News Highlights</h2>
+      <ul id="news-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
